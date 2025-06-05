@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="ml-10 flex items-center space-x-8"
             >
-              {navLinks.map((link, index) => (
+              {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}

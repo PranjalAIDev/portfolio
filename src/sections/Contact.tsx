@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AnimatedSection from '../components/AnimatedSection';
-import { Send, Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
+import { Send, Mail, MapPin, Linkedin, Github } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Contact: React.FC = () => {
