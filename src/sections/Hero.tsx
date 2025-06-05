@@ -3,13 +3,10 @@ import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
 
-// This would be replaced with your actual profile image
-const profileImageUrl = "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
-
 const Hero: React.FC = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-16">
-      <div className="absolute inset-0 bg-gradient-to-b from-secondary-900/30 to-dark-800/20 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-dark-800/30 to-dark-800/20 z-0"></div>
       
       <div className="section w-full relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
@@ -117,14 +114,29 @@ const Hero: React.FC = () => {
             className="md:col-span-5 order-1 md:order-2 flex justify-center md:justify-end"
           >
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-secondary-500/30 shadow-xl animate-float">
+              <motion.div 
+                className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-secondary-500/30 shadow-2xl"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
                 <img 
-                  src={profileImageUrl} 
+                  src="/Profile pic.JPG" 
                   alt="Pranjal Upadhyay" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
-              </div>
-              <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-primary-500 to-secondary-500 opacity-50 blur-xl animate-pulse"></div>
+              </motion.div>
+              <motion.div 
+                className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20 opacity-50 blur-xl"
+                animate={{ 
+                  scale: [1, 1.05, 1],
+                  opacity: [0.5, 0.7, 0.5] 
+                }}
+                transition={{ 
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              />
             </div>
           </motion.div>
         </div>
