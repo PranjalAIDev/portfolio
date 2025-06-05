@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Brain } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const navLinks = [
@@ -44,8 +44,21 @@ const Navbar: React.FC = () => {
             className="flex items-center"
           >
             <a href="#home" className="flex items-center">
-              <Brain className="h-8 w-8 text-secondary-500 mr-2" />
-              <span className="text-xl font-bold gradient-text">Pranjal Upadhyay</span>
+              <motion.div
+                className="relative px-4 py-2"
+                whileHover={{ scale: 1.03 }}
+              >
+                <motion.span 
+                  className="text-2xl logo-text animate-[glow_3s_ease-in-out_infinite] relative z-10"
+                >
+                  Pranjal Upadhyay
+                </motion.span>
+                <motion.div 
+                  className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-lg opacity-0 hover:opacity-100 transition-opacity duration-300"
+                  initial={{ opacity: 0 }}
+                  whileHover={{ opacity: 1 }}
+                />
+              </motion.div>
             </a>
           </motion.div>
 

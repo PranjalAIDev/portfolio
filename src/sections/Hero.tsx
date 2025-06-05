@@ -149,9 +149,9 @@ const Hero: React.FC = () => {
                 <motion.img 
                   src="/Profile pic.JPG" 
                   alt="Pranjal Upadhyay" 
-                  className="w-full h-full object-cover object-center"
-                  initial={{ scale: 1.2 }}
-                  animate={{ scale: 1 }}
+                  className="w-full h-full object-cover object-center scale-125"
+                  initial={{ scale: 1.3 }}
+                  animate={{ scale: 1.25 }}
                   transition={{ duration: 0.8 }}
                 />
               </motion.div>

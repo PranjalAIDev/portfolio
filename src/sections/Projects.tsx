@@ -5,51 +5,35 @@ import ProjectCard from '../components/ProjectCard';
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "AI Image Recognition System",
-      description: "A deep learning-based image recognition system that can identify and classify objects in images with high accuracy using convolutional neural networks.",
-      technologies: ["PyTorch", "CNN", "Computer Vision", "Python"],
-      image: "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      githubUrl: "https://github.com/PranjalAIDev",
-      liveUrl: "#"
-    },
-    {
-      title: "Natural Language Processing Chatbot",
-      description: "An intelligent chatbot powered by NLP algorithms that can understand and respond to user queries in natural language, providing personalized assistance.",
-      technologies: ["NLP", "BERT", "TensorFlow", "Flask"],
-      image: "https://images.pexels.com/photos/7367/startup-photos.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      githubUrl: "https://github.com/PranjalAIDev",
-      liveUrl: "#"
-    },
-    {
-      title: "Predictive Analytics Dashboard",
-      description: "A comprehensive dashboard for visualizing and analyzing data with predictive analytics capabilities, helping businesses make data-driven decisions.",
-      technologies: ["Python", "React", "D3.js", "Scikit-Learn"],
-      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      githubUrl: "https://github.com/PranjalAIDev",
-      liveUrl: "#"
-    },
-    {
-      title: "Reinforcement Learning Game AI",
-      description: "An AI agent trained using reinforcement learning to play and master complex games, demonstrating adaptive learning and strategic decision-making.",
-      technologies: ["RL", "PyTorch", "OpenAI Gym", "Python"],
-      image: "https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      githubUrl: "https://github.com/PranjalAIDev",
-      liveUrl: "#"
-    },
-    {
-      title: "Sentiment Analysis Tool",
-      description: "A tool that analyzes the sentiment of text data from various sources, helping businesses understand customer feedback and social media sentiment.",
-      technologies: ["NLP", "NLTK", "Python", "Flask"],
+      title: "MedBot - Patient Report Analyzer",
+      description: "A specialized LLM model that can efficiently process and analyze PDF reports focused on a single disease type. Developed a comprehensive report analyzer capable of extracting relevant clinical information from both PDF documents and medical images.",
+      technologies: ["TypeScript", "React", "LLM", "AI", "PDF Processing"],
       image: "https://images.pexels.com/photos/6476260/pexels-photo-6476260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      githubUrl: "https://github.com/PranjalAIDev",
+      githubUrl: "https://github.com/PranjalAIDev/MedBot-Patient-Report-Analyzer.git",
       liveUrl: "#"
     },
     {
-      title: "Time Series Forecasting Application",
-      description: "An application that uses advanced time series analysis to forecast future trends and patterns in data, useful for financial predictions and resource planning.",
-      technologies: ["LSTM", "Prophet", "TensorFlow", "React"],
+      title: "Finmate AI",
+      description: "A responsive AI-powered sales dashboard for GroMo Partners to track calls, conversion rates, meetings, and customer engagement, improving real-time visibility and decision-making. Implemented smart suggestions to improve user engagement and boost conversions.",
+      technologies: ["TypeScript", "React", "Vite", "Tailwind CSS", "AI"],
       image: "https://images.pexels.com/photos/186461/pexels-photo-186461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      githubUrl: "https://github.com/PranjalAIDev",
+      githubUrl: "https://github.com/PranjalAIDev/finmateai.git",
+      liveUrl: "#"
+    },
+    {
+      title: "Aspect-Based Sentiment Analysis (ABSA)",
+      description: "Developed a machine learning model to analyze sentiment on specific product aspects (e.g., design, usability). Built a Flask-based web application for collecting and visualizing customer feedback.",
+      technologies: ["Python", "Flask", "Machine Learning", "NLP", "HTML"],
+      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      githubUrl: "https://github.com/PranjalAIDev/Flask-Sentiment-Analysis-ML.git",
+      liveUrl: "#"
+    },
+    {
+      title: "Layout Harmony Compass",
+      description: "A collaborative project focused on creating harmonious web layouts with advanced design principles and responsive frameworks.",
+      technologies: ["HTML", "CSS", "JavaScript", "UI/UX", "Responsive Design"],
+      image: "https://images.pexels.com/photos/7367/startup-photos.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      githubUrl: "https://github.com/ShivangiInnovates/layout-harmony-compass.git",
       liveUrl: "#"
     }
   ];
