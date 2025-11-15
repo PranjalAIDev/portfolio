@@ -1,26 +1,23 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './sections/Hero';
-import About from './sections/About';
-import Projects from './sections/Projects';
-import Skills from './sections/Skills';
-import Contact from './sections/Contact';
-import Footer from './components/Footer';
-import BackgroundParticles from './components/BackgroundParticles';
+import FuturisticNavbar from './components/FuturisticNavbar';
+import FuturisticHero from './sections/FuturisticHero';
+import FuturisticAbout from './sections/FuturisticAbout';
+import FuturisticProjects from './sections/FuturisticProjects';
+import FuturisticSkills from './sections/FuturisticSkills';
+import FuturisticContact from './sections/FuturisticContact';
+import FuturisticFooter from './components/FuturisticFooter';
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-dark-700 to-dark-800 text-white overflow-hidden">
-      <BackgroundParticles />
-      <Navbar />
-      <main className="relative z-10">
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+    <div className="relative min-h-screen bg-white dark:bg-neutral-950 text-black dark:text-white overflow-hidden">
+      <FuturisticNavbar />
+      <main className="relative">
+        <FuturisticHero />
+        <FuturisticAbout />
+        <FuturisticSkills />
+        <FuturisticProjects />
+        <FuturisticContact />
       </main>
-      <Footer />
+      <FuturisticFooter />
     </div>
   );
 }
